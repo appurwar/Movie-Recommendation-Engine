@@ -1,6 +1,4 @@
-# Movie-Recommendation-Engine
-
-# Movie Recommendation Engine - 
+# Movie Recommendation Engine
 
 **Overview and Approach** – 
 
