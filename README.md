@@ -1,4 +1,4 @@
-# Movie Recommendation Engine
+# Movie Recommendation Engine - 
 
 **Overview and Approach** – 
 
@@ -25,46 +25,50 @@ All the results are stored as numpy arrays to revisit the results in future.
  
 # Results – 
 
-Surface Plots – 
+## Surface Plots – 
 
-•	For Train RMSE –  
+•	**For Train RMSE** –  
 
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/SurfacePlotRMSE_Train.png)
 
 Figure: Surface Plot for Train RMSE (Rank vs Lambda vs RMSE)
 
 
 
-•	For Test RMSE – 
+•	**For Test RMSE** – 
 
-
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/SurfacePlotRMSE.png)
 
 Figure: Surface Plot for Test RMSE (Rank vs Lambda vs RMSE) 
 
-•	For Train MRR – 
+•	**For Train MRR** – 
 
-  Figure: Surface Plot for Train MRR (Rank vs Lambda vs MRR)
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/SurfacePlotMRR_Train.png)
+  
+Figure: Surface Plot for Train MRR (Rank vs Lambda vs MRR)
 
 
-•	For Test MRR – 
+•	**For Test MRR** – 
 
-
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/SurfacePlotMRR.png)
 
 Figure: Surface Plot for Test MRR (Rank vs Lambda vs MRR)
 
-Mean and Standard Deviation –
+## Mean and Standard Deviation –
 
-•	For RMSE (over 3 iterations) – 
+•	**For RMSE** (over 3 iterations) – 
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/RMSE_Mean_SD.png)
 
 Figure 9: Mean and Standard Deviation (X-Axis: Rank, Y-Axis: RMSE)
 
-•	For MRR (over 3 iteration) –  
+•	**For MRR** (over 3 iteration) –  
+![](https://github.com/appurwar/Movie-Recommendation-Engine/blob/master/MRR_Mean_SD.png)
 
 Figure 10: Mean and Standard Deviation (X-Axis: Rank, Y-Axis: MRR)
 
 # **Conclusion** –
 
-As observed from the results, RMSE decreases and MRR increases as we increase the rank from 4 to 16 for training error, but after rank 12 the model shows signs of slight overfitting as visible from the difference in the training and test errors. 
+As observed from the results, RMSE decreases and MRR increases as we increase the rank from 4 to 16 for training error, but after rank 12 the model shows signs of slight overfitting, visible from the difference in the training and test errors. 
 
 Similarly, for lambdas RMSE decreases and MRR increases when we decrease the value of lambda from 0.2 to 0.0002.
 Also, as the number of epochs increases on the data, RMSE decreases further and MRR increases, but the increase is minor after the initial few epochs and the improvement seems to plateau.
-
