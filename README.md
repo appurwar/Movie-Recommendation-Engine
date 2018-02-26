@@ -10,7 +10,7 @@ This method fetches the data from ‘ratings.csv’, re-indexing the ‘userIds�
 2)	**Matrix Factorization** – _calcMatrixFactorization()_: 
 This function performs the matrix factorization step, creating 2 new skinny matrix of dimensions (users * rank) and (movies * rank).  These matrices are first initialized randomly and then based on the prediction of the movie rating and the amount which they are off from the actual results, stochastic gradient descent (SGD) is used to populate the values in these matrices.  Moreover, a global bias term and one bias each for users and helps us in fine tuning our results further. The addition of bias term helped me in significantly reducing the RMSE. While without bias the RMSE value was around 2, adding bias parameters reduced it further to around 0.9, which was further improved by parameter tuning, as discussed in the results section below. 
 
-3)	**RMSE Calculation **– _calcRMSE()_: 
+3)	**RMSE Calculation**– _calcRMSE()_: 
 This method calculates and returns the root mean squared error of given dataset, using the skinny feature matrices generated using the matrix factorization method stated above. 
 
 4)	**MRR Calculation** – _calcMRR()_: 
